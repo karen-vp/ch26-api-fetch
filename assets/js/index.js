@@ -5,7 +5,7 @@ const cardContainer = document.getElementById('card-container');
 let userList;
 
 function getUsersWithLocalStorage() {
-  
+
     if (localStorage.getItem('data') !== null) {
         showLoading();
         clearCardElements(cardContainer);
@@ -17,9 +17,10 @@ function getUsersWithLocalStorage() {
         getUsersFetch(url);
     }
 
-     setInterval(() => {
-         getUsersFetch(url);
-     }, 60_000);
+    setInterval(() => {
+        clearCardElements(cardContainer);
+        getUsersFetch(url);
+    }, 60_000);
 
 }
 
