@@ -1,0 +1,11 @@
+body{
+    background-color: #453ca9 !important;
+}
+
+h1, #loading{
+    color: #ffffff !important;
+}
+
+.img-card{
+    width: 150px !important;
+}
